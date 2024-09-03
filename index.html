@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investima - Inversiones Inteligentes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado Principal -->
+    <header>
+        <div class="header-content">
+            <h1>Investima</h1>
+            <nav class="nav-buttons">
+                <button onclick="showSection('home')">Home</button>
+                <button onclick="showSection('inversiones')">Inversiones</button>
+                <button onclick="showSection('recomendaciones')">Recomendaciones</button>
+                <button onclick="showSection('perfil')">Perfil del Usuario</button>
+                <button onclick="showSection('educacion')">Educación Financiera</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Panel Central (Home) -->
+    <main>
+        <section id="home" class="dashboard">
+            <!-- Opción de Inversión 1 -->
+            <div class="inversion-opcion">
+                <h2>Apple Inc</h2>
+
+                <div class="inversion-contenido">
+                    <!-- Integración del Widget de TradingView -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright">
+                            <a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank">
+                                <span class="blue-text">Siga los mercados en TradingView</span>
+                            </a>
+                        </div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                        {
+                            "width": "500",
+                            "height": "300",
+                            "symbol": "NASDAQ:AAPL",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "light",
+                            "style": "1",
+                            "locale": "es",
+                            "allow_symbol_change": true,
+                            "calendar": false,
+                            "support_host": "https://www.tradingview.com"
+                        }
+                        </script>
+                    </div>
+
+                    <!-- Noticias al lado derecho -->
+                    <div class="noticias-lado">
+                        <div class="noticia-analisis">
+                            <div class="noticia-imagen">
+                                <img src="images/imagenapl1.PNG" alt="Imagen de la noticia">
+                            </div>
+                            <div class="noticia-texto">
+                                <h3><a href="https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-eeuu/que-implica-los-cambios-en-la-alta-direccion-de-n-740617" target="_blank">¿Qué implican los cambios en la alta dirección de Apple?</a></h3>
+                                <p> Luca Maestri dejará su puesto como director financiero de Apple el 1 de enero, siendo reemplazado por Kevan Parekh. <br> <strong>Análisis:</strong> El cambio de dirección podría reforzar la estrategia de Apple en innovación y control de costos, especialmente en inteligencia artificial.</p>
+                            </div>
+                        </div>
+                        <div class="noticia-analisis">
+                            <div class="noticia-imagen">
+                                <img src="images/imagenapl2.PNG" alt="Imagen de la noticia">
+                            </div>
+                            <div class="noticia-texto">
+                                <h3><a href="https://www.larepublica.co/apple" target="_blank">Apple apostará por completo al Oled para las pantallas del iPhone a partir de 2025</a></h3>
+                                <p>Apple planea usar exclusivamente pantallas OLED para todos sus modelos de iPhone a partir de 2025, eliminando gradualmente las pantallas LCD. <br> <strong>Análisis:</strong> La transición total a pantallas OLED refuerza el enfoque de Apple en la calidad y la innovación tecnológica, lo que podría mejorar la experiencia del usuario y aumentar la demanda de nuevos iPhones. Esto posiciona a Apple para capturar más cuota de mercado y mantener su liderazgo en el sector de smartphones premium.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="vender-btn">¡Vender Ahora!</button>
+            </div>
+
+            <!-- Opción de Inversión 2 -->
+            <div class="inversion-opcion">
+                <h2>INDITEX</h2>
+
+                <div class="inversion-contenido">
+                    <!-- Integración del Widget de TradingView -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                        {
+                        "width": "500",
+                        "height": "300",
+                        "symbol": "MIL:1ITX",
+                        "interval": "D",
+                        "timezone": "Etc/UTC",
+                        "theme": "light",
+                        "style": "1",
+                        "locale": "en",
+                        "allow_symbol_change": true,
+                        "calendar": false,
+                        "support_host": "https://www.tradingview.com"
+                      }
+                        </script>
+                      </div>
+
+                    <!-- Noticias al lado derecho -->
+                    <div class="noticias-lado">
+                        <div class="noticia-analisis">
+                            <div class="noticia-imagen">
+                                <img src="images/imagen4.PNG" alt="Imagen de la noticia">
+                            </div>
+                            <div class="noticia-texto">
+                                <h3><a href="https://www.eleconomista.es/mercados-cotizaciones/noticias/12950448/08/24/las-razones-jefferies-para-apostar-inditex-bolsa-es-refugio.html" target="_blank">Las razones de Jefferies para apostar por Inditex: Bolsa es refugio</a></h3>
+                                <p>Analistas de Jefferies destacan la fortaleza de Inditex en el mercado global y recomiendan su inversión como un refugio seguro en tiempos de volatilidad. <br> <strong>Análisis:</strong> Con un sólido rendimiento y un bajo nivel de riesgo, Inditex sigue siendo una opción de inversión preferida.</p>
+                            </div>
+                        </div>
+                        <div class="noticia-analisis">
+                            <div class="noticia-imagen">
+                                <img src="images/imagen5.PNG" alt="Imagen de la noticia">
+                            </div>
+                            <div class="noticia-texto">
+                                <h3><a href="https://markets.businessinsider.com/news/stocks/spanish-stocks-zara-s-owner-inditex-itx-reports-in-line-profits-shares-gain-1033453775" target="_blank">Inditex (ITX), propietario de Zara, reporta ganancias en línea</a></h3>
+                                <p>Inditex reportó un aumento del 10.8% en su beneficio neto en el primer trimestre de 2024, con ventas sólidas y un buen desempeño de su colección Primavera/Verano, superando expectativas. <br> <strong>Análisis:</strong> Inditex sigue mostrando fortaleza financiera y demanda constante, lo que la convierte en una opción de inversión atractiva.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="invertir-btn">¡Invertir Ahora!</button>
+            </div>
+
+            <!-- Opción de Inversión 3 -->
+            <div class="inversion-opcion">
+                <h2>Opción de Inversión 3</h2>
+                <!-- Aquí puedes añadir contenido para la opción de inversión 3 -->
+            </div>
+        </section>
+
+        <!-- Sección de Inversiones -->
+        <section id="inversiones" class="dashboard" style="display:none;">
+            <h2>Inversiones</h2>
+            <!-- Aquí puedes añadir contenido específico para inversiones -->
+        </section>
+
+        <!-- Sección de Recomendaciones -->
+        <section id="recomendaciones" class="dashboard" style="display:none;">
+            <h2>Recomendaciones</h2>
+            <!-- Aquí puedes añadir contenido específico para recomendaciones -->
+        </section>
+
+        <!-- Sección de Perfil del Usuario -->
+        <section id="perfil" class="dashboard" style="display:none;">
+            <h2>Perfil del Usuario</h2>
+            <!-- Aquí puedes añadir contenido específico para el perfil del usuario -->
+        </section>
+
+        <!-- Sección de Educación Financiera -->
+        <section id="educacion" class="dashboard" style="display:none;">
+            <h2>Educación Financiera</h2>
+            <ul class="cursos-lista">
+                <li>
+                    <strong>Curso 1: Fundamentos de Inversión</strong> - 5 clases, 3 horas en total.
+                    <p>Aprende los conceptos básicos de inversión, incluyendo la gestión de riesgos y la diversificación de portafolios.</p>
+                </li>
+                <li>
+                    <strong>Curso 2: Análisis Técnico</strong> - 7 clases, 5 horas en total.
+                    <p>Conoce las técnicas de análisis técnico para predecir movimientos de precios en el mercado financiero.</p>
+                </li>
+                <li>
+                    <strong>Curso 3: Finanzas Personales</strong> - 4 clases, 2 horas en total.
+                    <p>Gestión de presupuesto, ahorro e inversión personal para alcanzar objetivos financieros a largo plazo.</p>
+                </li>
+                <li>
+                    <strong>Curso 4: Inversiones en Bienes Raíces</strong> - 6 clases, 4 horas en total.
+                    <p>Descubre las estrategias para invertir en propiedades y generar ingresos pasivos.</p>
+                </li>
+                <li>
+                    <strong>Curso 5: Criptomonedas y Blockchain</strong> - 8 clases, 6 horas en total.
+                    <p>Explora el mundo de las criptomonedas y la tecnología blockchain, y aprende cómo invertir en este mercado emergente.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
